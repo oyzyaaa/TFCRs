@@ -9,6 +9,6 @@ indir="Human_fimo" # the directory where you put the output files of FIMO
 motifMap="Homo_sapiens_2020_0920/TF_Information_all_motifs_plus.txt" # the mapping relationship of TF and its TF family from CIS-BP   
 cd Codes/TFCR_embryo   
 perl d-motif_combine.pl $indir TFfamily $motifMap   
-perl $tfcr/e-tfpos_combine.pl TFfamily   
-perl $tfcr/f1-tf_bed-new-c.pl TFfamily   
-perl $tfcr/0-merge-TFCR.pl $indir TFfamily   
+perl e-tfpos_combine.pl TFfamily   
+perl f1-tf_bed-new-c.pl TFfamily   
+perl 0-merge-TFCR.pl $indir TFfamily   
